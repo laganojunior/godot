@@ -4,3 +4,6 @@ env.add_source_files(env.modules_sources, "enet/*.c")
 env.add_source_files(env.modules_sources, "*.cpp")
 
 env.Append(CPPPATH = ['enet/include'])
+
+# Windows only
+env.Append(LINKFLAGS = ['ws2_32.lib', 'winmm.lib'])

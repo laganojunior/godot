@@ -9,11 +9,11 @@ EnetWrapperSingleton :: EnetWrapperSingleton()
     if (enet_initialize() != 0)
     {
         // How do you log errors in godot?
-        print_line("Error initializing enet wrapper");
+        std :: cout << "Error initializing enet wrapper" << std :: endl;
     }
     else
     {
-        print_line("Initialized Enet?");
+        std :: cout << "Enet wrapper all good!" << std :: endl;
     }
 }
 
