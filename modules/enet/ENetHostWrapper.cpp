@@ -60,12 +60,12 @@ void ENetHostWrapper :: connect_to(ENetAddress& address, ENetPeer * peer)
     enet_host_flush(host);
 }
 
-//Error ENetHostWrapper :: send_packet_data(EnetPeerWrapper& peerWrapper, uint8_t * buffer, int buffer_length)
-//{
-//    ENetPacket * packet = enet_packet_create(buffer, buffer_length, ENET_PACKET_FLAG_RELIABLE);
-//
-//    if (enet_peer_send(peerWrapper.peer, 0, packet))
-//        return FAILED;
-//
-//    return OK;
-//}
+Error ENetHostWrapper :: send_packet_data(ENetPeer * peer, uint8_t * buffer, int buffer_length)
+{
+    ENetPacket * packet = enet_packet_create(buffer, buffer_length, ENET_PACKET_FLAG_RELIABLE);
+
+    if (enet_peer_send(peer, 0, packet))
+        return FAILED;
+
+    return OK;
+}

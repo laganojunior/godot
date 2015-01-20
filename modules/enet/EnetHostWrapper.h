@@ -4,6 +4,7 @@
 #include "error_list.h"
 
 #include <enet/enet.h>
+#include <stdint.h>
 
 class ENetHostWrapper
 {
@@ -18,6 +19,7 @@ class ENetHostWrapper
     bool get_event(ENetEvent& event, int waitForMillis = 0);
     void disconnect_from(ENetPeer * peer);
     void connect_to(ENetAddress& address, ENetPeer * peer);
+    Error send_packet_data(ENetPeer * peer, uint8_t * buffer, int buffer_length);
 };
 
 #endif
