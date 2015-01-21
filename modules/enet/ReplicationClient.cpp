@@ -3,7 +3,7 @@
 
 #include "ReplicationClient.h"
 #include "ReplicationConstants.h"
-
+/*
 void ReplicationClient :: handle_packet_data(uint8_t* data, int len)
 {
     Variant packet_var;
@@ -137,3 +137,4 @@ void ReplicationClient :: add_static_replicate_node(String name, Node * node)
 {
     replicate_nodes.insert(name, node);
 }
+*/

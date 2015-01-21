@@ -1,6 +1,6 @@
 #ifndef __GODOT_MODULE_ENET_REPLICATION_CLIENT_H__
 #define __GODOT_MODULE_ENET_REPLICATION_CLIENT_H__
-
+/*
 #include "scene/main/node.h"
 #include "reference.h"
 #include "ustring.h"
@@ -30,5 +30,5 @@ class ReplicationClient : public Reference
     void service_tick();
     void add_static_replicate_node(String name, Node * node);
 };
-
+*/
 #endif

@@ -5,7 +5,7 @@
 #include "ReplicationConstants.h"
 
 #include <iostream>
-
+/*
 void ReplicationManager :: send_update_data_for_node(String name, Node * node)
 {
     Array empty_args;
@@ -115,3 +115,4 @@ void ReplicationManager :: add_static_replicate_node(String name, Node * node)
 {
     replicate_nodes.insert(name, node);
 }
+*/
